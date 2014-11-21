@@ -25,6 +25,7 @@ h1, h2 {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .icon {
@@ -68,7 +69,6 @@ h1, h2 {
 
 #mainContent {
     margin: 150px auto 0 auto;
-    height: 550px;
     width: 1000px;
     padding: 10px;
 }
