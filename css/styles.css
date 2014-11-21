@@ -1,0 +1,231 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/nd2.jpg");
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    position: absolute;
+    bottom: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.icon:hover {
+    height: 55px;
+    width: 55px;
+}
+
+#li {
+    right: 350px;
+}
+
+#gh {
+    right: 420px;
+}
+
+#tw {
+    right: 490px;
+}
+
+#fb {
+    right: 560px;
+}
+
+#bigName {
+    color: white;
+    font-size: 64px;
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+}
+
+#mainContent {
+    margin: 150px auto 0 auto;
+    height: 550px;
+    width: 1000px;
+    padding: 10px;
+}
+
+.menuOp {
+    /*color: #333;*/
+    color: white;
+    font-size: 48px;
+    padding: 10px;
+    /*border-bottom: 5px solid transparent;*/
+    background-color: rgba(255,255,255,.4);
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+}
+
+.strong:hover {
+    background-color: rgba(116,191,4,.9);
+    /*border-bottom: 5px solid #74BF04;*/
+}
+
+.ok:hover {
+    background-color: rgba(255,214,0,.9);
+    /*border-bottom: 5px solid #FFD600;*/
+}
+
+.dabble:hover {
+    background-color: rgba(118,226,197,.9);
+    /*border-bottom: 5px solid #76E2C5;*/
+}
+
+.lang:hover {
+    background-color: rgba(242,75,15,.9);
+    /*border-bottom: 5px solid #F24B0F;*/
+}
+
+.underline {
+    cursor: default;
+}
+
+.underline:hover {
+    color: #a5a5a5;
+}
+
+.strongCont .underline {
+    border-bottom: 3px solid #74BF04;
+}
+
+.okCont .underline {
+    border-bottom: 3px solid #FFD600;
+}
+
+.langCont .underline {
+    border-bottom: 3px solid #F24B0F;
+}
+
+.dabbleCont .underline {
+    border-bottom: 3px solid #76E2C5;
+}
+
+.header {
+    background-color: #e3e3e3;
+    border-bottom: 1px solid #a9a9a9;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 35px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #5d5d5d;
+}
+
+.dropContent {
+    background-color: #d0d0d0;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 20px;
+}
+
+.code {
+    color: #a5a5a5;
+}
+
+.dropContent > section {
+    padding: 20px 0 15px 0;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.dropContent > section:first-of-type {
+    border-top: 1px solid #a5a5a5;
+}
+
+.dropContent > section > h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #414141;
+}
+
+.dropContent > section > h1 > .code {
+    text-transform: none;
+    font-size: 16px;
+}
+
+.dropContent > section > h2 {
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 30px;
+    font-style: italic;
+    color: #606060;
+}
+
+.dropContent > section li {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.close-popdown {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #a9a9a9;
+    cursor: pointer;
+}
+
+.strongCont .close-popdown {
+    background-color: #74BF04;
+    color: #e6e6e6;
+}
+
+.strongCont .close-popdown:hover {
+    background-color: #7dcd03;
+}
+
+.okCont .close-popdown {
+    background-color: #FFD600;
+}
+
+.okCont .close-popdown:hover {
+    background-color: #f8cf00;
+}
+
+.dabbleCont .close-popdown {
+    background-color: #76E2C5;
+}
+
+.dabbleCont .close-popdown:hover {
+    background-color: #72dabe;
+}
+
+.langCont .close-popdown {
+    background-color: #F24B0F;
+    color: #e6e6e6;
+}
+
+.langCont .close-popdown:hover {
+    background-color: #fd4f10;
+}
