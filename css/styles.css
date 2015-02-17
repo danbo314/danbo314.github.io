@@ -134,7 +134,7 @@ a, a:visited {
     color: red;
 }
 
-@media screen and (max-width: 675px) {
+@media all and (max-width: 675px) {
     .bg {
         display: none;
     }
