@@ -1,8 +1,47 @@
 $(function() {
-    $(".strong").wrap("<a href='html/strong.html' class='popdown'></a>");
-    $(".ok").wrap("<a href='html/ok.html' class='popdown'></a>");
-    $(".dabble").wrap("<a href='/html/dabble.html' class='popdown'></a>");
-    $(".lang").wrap("<a href='/html/lang.html' class='popdown'></a>");
     
-    $('.popdown').popdown();
+    setFade(false,0);
+
+    $(".nav:not(#title)").click(function() {
+        $("#comingSoon").show().hover(function() {
+            $(this).fadeOut(function() {
+                $(this).hide();
+            });
+        });
+
+        setTimeout(function() {
+            $("#comingSoon").fadeOut(function() {
+                $(this).hide();
+            });
+        }, 7000);
+    });
+
 });
+
+function setFade(fadeIn, it) {
+    var queue = [$("#image3"), $("#image2"), $("#image")],
+        $node = queue[it],
+        nextFadeIn = (it+1 === queue.length-1);
+
+    setTimeout(function() {
+        if (!fadeIn) {
+            $node.fadeOut("slow");
+        }
+        else {
+            $node.fadeIn("slow");
+        }
+
+        if (nextFadeIn && !fadeIn) {
+            it = queue.length-2;
+        }
+        else if (!nextFadeIn && fadeIn) {
+            it = 0;
+        }
+        else {
+            it = nextFadeIn ? it-1 : it+1;
+            it = it%3;
+        }
+
+        setFade(nextFadeIn, it);
+    }, 12000);
+}
