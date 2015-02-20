@@ -1,5 +1,14 @@
 $(function () {
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 100) {
+            $("#navbar").addClass("small");
+        }
+        else {
+            $("#navbar").removeClass("small");
+        }
+    });
+
 });
 
 function sendMail(from_email, subject, message) {
