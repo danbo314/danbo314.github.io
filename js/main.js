@@ -2,7 +2,7 @@ $(function() {
     
     setFade(false,0);
 
-    $(".nav:not(#title):not(#contact)").click(function() {
+    $(".nav.invalid").click(function() {
         $("#comingSoon").show().hover(function() {
             $(this).fadeOut(function() {
                 $(this).hide();

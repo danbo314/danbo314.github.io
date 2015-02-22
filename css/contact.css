@@ -173,6 +173,8 @@ a:hover {
 #contactForm textarea {
     height: 180px;
     padding: 8px 5px;
+    overflow: scroll;
+    resize: none;
 }
 
 #contactForm input:hover, #contactForm textarea:hover {
