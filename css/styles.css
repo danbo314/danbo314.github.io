@@ -4,13 +4,13 @@ body, html {
 
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    text-rendering: optimizeLegibility;
 }
 
 a, a:visited {
@@ -238,7 +238,6 @@ a, a:visited {
     width: 170px;
     margin: 0 60px;
     font-family: 'Crushed', cursive;
-/*    font-family: 'Neucha', cursive;*/
 
     -webkit-transition: all .1s ease .05s;
     -moz-transition: all .1s ease .05s;
@@ -249,6 +248,77 @@ a, a:visited {
 
 #navbar #title:hover {
     color: #ff5050;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #e8e8e8;
+    padding: 0px 20px 10px 15px;
+}
+
+#footer > #title {
+    float: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#footer > #icons {
+    float: right;
+}
+
+#footer > #icons > .icon {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+#footer > #icons > .ion-email:hover {
+    color: #ff5050;
+}
+
+#footer > #icons > .ion-social-github:hover {
+    color: #262626;
+}
+
+#footer > #icons > .ion-social-linkedin:hover {
+    color: #1472b2;
+}
+
+#footer > #icons > .ion-social-twitter:hover {
+    color: #4298ed;
+}
+
+#footer > #icons > .ion-social-facebook:hover {
+    color: #34498d;
+}
+
+#footer > #icons > .ion-social-instagram-outline:hover {
+    color: #683a2e;
+}
+
+#footer > #icons > .ion-social-googleplus:hover {
+    color: #d3342b;
+}
+
+#footer.bottom {
+    bottom: auto;
+    color: #434343;
+    height: 20px;
+    box-shadow: 0 0 40px #2e2e2e;
+}
+
+#footer.bottom > #title {
+    font-weight: 300;
+    width: 300px;
+}
+
+#footer.bottom div {
+    height: 30px;
+    line-height: 30px;
 }
 
 @media all and (max-width: 675px) {

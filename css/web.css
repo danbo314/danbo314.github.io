@@ -1,0 +1,18 @@
+#navbar a:hover {
+    color: #e8e8e8;
+}
+
+#navbar {
+    bottom: auto;
+    top: 0;
+    background-color: #434343;
+    color: #e8e8e8;
+}
+
+#navbar.small {
+    background:  rgba(67, 67, 67, .95);
+}
+
+#navbar #web .navBottom {
+    opacity: 1;
+}
