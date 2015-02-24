@@ -233,6 +233,16 @@ a, a:visited {
     transition: all .1s ease .05s;
 }
 
+#navbar .nav.selected,
+#navbar .nav.selected > h1,
+#navbar .nav.selected > h2 {
+    cursor: default;
+}
+
+#navbar .nav.selected .navBottom {
+    opacity: 1;
+}
+
 #navbar #title {
     font-size: 35px;
     width: 170px;
@@ -322,7 +332,7 @@ a, a:visited {
     line-height: 30px;
 }
 
-@media all and (max-width: 675px) {
+/*@media all and (max-width: 675px) {
     .bg {
         display: none;
     }
@@ -372,4 +382,4 @@ a, a:visited {
     #navbar .nav:hover .navBottom {
         opacity: 0;
     }
-}
+}*/
