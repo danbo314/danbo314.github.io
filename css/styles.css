@@ -129,6 +129,10 @@ a, a:visited {
  * Navbar small styles
  */
 
+#navbar.small {
+    background:  rgba(67, 67, 67, .95);
+}
+
 #navbar.small,
 #navbar.small .nav,
 #navbar.small .nav > h1,
@@ -162,6 +166,17 @@ a, a:visited {
 /*
  * End small styles
  */
+
+#navbar.top {
+    bottom: auto;
+    top: 0;
+    background-color: #434343;
+    color: #e8e8e8;
+}
+
+#navbar.top a:hover {
+    color: #e8e8e8;
+}
 
 #navbar {
     position: fixed;
@@ -287,37 +302,42 @@ a, a:visited {
     font-size: 20px;
 }
 
-#footer > #icons > .ion-email:hover {
+#footer > #icons > .ion-email:hover,
+#footer.bottom > #icons > .ion-email:hover {
     color: #ff5050;
 }
 
 #footer > #icons > .ion-social-github:hover {
-    color: #262626;
+    color: white;
 }
 
-#footer > #icons > .ion-social-linkedin:hover {
+#footer > #icons > .ion-social-linkedin:hover,
+#footer.bottom > #icons > .ion-social-linkedin:hover {
     color: #1472b2;
 }
 
-#footer > #icons > .ion-social-twitter:hover {
+#footer > #icons > .ion-social-twitter:hover,
+#footer.bottom > #icons > .ion-social-twitter:hover {
     color: #4298ed;
 }
 
-#footer > #icons > .ion-social-facebook:hover {
+#footer > #icons > .ion-social-facebook:hover,
+#footer.bottom > #icons > .ion-social-facebook:hover {
     color: #34498d;
 }
 
-#footer > #icons > .ion-social-instagram-outline:hover {
+#footer > #icons > .ion-social-instagram-outline:hover,
+#footer.bottom > #icons > .ion-social-instagram-outline:hover {
     color: #683a2e;
 }
 
-#footer > #icons > .ion-social-googleplus:hover {
+#footer > #icons > .ion-social-googleplus:hover,
+#footer.bottom > #icons > .ion-social-googleplus:hover {
     color: #d3342b;
 }
 
 #footer.bottom {
     bottom: auto;
-    color: #434343;
     height: 20px;
     box-shadow: 0 0 60px #676767;
 }
@@ -325,11 +345,28 @@ a, a:visited {
 #footer.bottom > #title {
     font-weight: 300;
     width: 300px;
+    color: #434343;
+}
+
+#footer.bottom > #icons > .icon {
+    color: #9f9f9f;
 }
 
 #footer.bottom div {
     height: 30px;
     line-height: 30px;
+}
+
+#footer.bottom > #icons > .ion-social-github:hover {
+    color: #262626;
+}
+
+#footer.trans > #title, #footer.trans > #icons > .icon {
+    opacity: .2;
+}
+
+#footer.trans > #icons > .icon:hover {
+    opacity: 1;
 }
 
 /*@media all and (max-width: 675px) {
