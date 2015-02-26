@@ -2,20 +2,6 @@ $(function() {
     
     setFade(false,0);
 
-    $(".nav.invalid").click(function() {
-        $("#comingSoon").show().hover(function() {
-            $(this).fadeOut(function() {
-                $(this).hide();
-            });
-        });
-
-        setTimeout(function() {
-            $("#comingSoon").fadeOut(function() {
-                $(this).hide();
-            });
-        }, 7000);
-    });
-
 });
 
 function setFade(fadeIn, it) {
