@@ -1,0 +1,83 @@
+.mobile body {
+  overflow: hidden;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile #scroller {
+  height: 3000px;
+}
+
+.about_panel {
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.about_content {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #e8e8e8;
+    right: 50px;
+}
+
+.about_content > div,
+.about_content > hr {
+    float: right;
+    clear: right;
+    text-align: right;
+}
+
+.about_content a:hover {
+    border-bottom: 2px dotted #ff5050;
+}
+
+.about_content .big-bold {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#boston {
+    background: url("../img/boston.jpg") no-repeat 0 bottom;
+    background-size: cover;
+}
+
+#boston > .about_content {
+    top: 300px;
+    width: 600px;
+}
+
+#notreDame {
+    background: url("../img/notreDame.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+#notreDame  > .about_content {
+    top: 100px;
+    width: 700px;
+}
+
+#newYork {
+    background: url("../img/newYork.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#newYork > .about_content {
+    bottom: 10px;
+    right: auto;
+    left: 50px;
+    width: 600px;
+}
+
+#newYork > .about_content > div,
+#newYork > .about_content > hr {
+    float: left;
+    clear: left;
+    text-align: left;
+}

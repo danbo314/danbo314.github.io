@@ -65,25 +65,19 @@ a, a:visited {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#1a1a1a', GradientType=0 );(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.9));
 }
 
-#cover > a:hover {
-    color: #696969;
+#cover.lighter {
+    background: rgba(26,26,26,.3);
+    background: -moz-linear-gradient(top, rgba(26,26,26,.3) 0%, rgba(26,26,26,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(26,26,26,.3)), color-stop(100%, rgba(26,26,26,0.6)));
+    background: -webkit-linear-gradient(top, rgba(26,26,26,.3) 0%, rgba(26,26,26,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(26,26,26,.3) 0%, rgba(26,26,26,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(26,26,26,.3) 0%, rgba(26,26,26,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(26,26,26,.3) 0%, rgba(26,26,26,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#1a1a1a', GradientType=0 );(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.6));
 }
 
-#comingSoon {
-    cursor: default;
-    color: #ff5050;
-    font-size: 80px;
-    font-family: 'Neucha', cursive;
-    text-align: center;
-    width: 250px;
-    height: 180px;
-    display: none;
-    position: absolute;
-    top: 40%;
-    bottom: 50%;
-    margin: 0 auto;
-    left: 0;
-    right: 0
+#cover > a:hover {
+    color: #696969;
 }
 
 #welcome {
@@ -95,25 +89,25 @@ a, a:visited {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#welcome .small-thin {
+.small-thin {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
 }
 
-#welcome .big-bold {
+.big-bold {
     font-size: 40px;
     font-weight: 900;
     line-height: 50px;
 }
 
-#welcome .mid-normal {
+.mid-normal {
     font-size: 30px;
     font-weight: 300;
     line-height: 45px;
 }
 
-#welcome .break {
+.break {
     display: block;
     height: 1px;
     border: 0;
