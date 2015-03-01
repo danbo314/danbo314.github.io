@@ -45,6 +45,7 @@
 
 #boston > .about_content {
     width: 600px;
+    top: 300px;
 }
 
 #notreDame {
@@ -54,6 +55,7 @@
 
 #notreDame  > .about_content {
     width: 700px;
+    top: 100px;
 }
 
 #newYork {
@@ -62,6 +64,7 @@
 }
 
 #newYork > .about_content {
+    bottom: 10px;
     right: auto;
     left: 50px;
     width: 600px;
@@ -101,12 +104,24 @@
         margin: 0 auto;
     }
 
+    #boston > .about_content {
+        top: 200px;
+    }
+
+    #notreDame > .about_content {
+        top: 150px;
+    }
+
+    #newYork > .about_content {
+        bottom: 30px
+    }
+
 }
 
 @media all and (max-width: 550px) {
 
-    #boston > .about_content {
-        top: -150px;
+    #notreDame > .about_content {
+        top: 50px;
     }
 
     #boston > .about_content,
