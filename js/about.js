@@ -21,6 +21,8 @@
         var iScrollInstance;
 
         if (isMobileWebkit) {
+            $.getScript("lib/scrollability.js");
+
             iScrollInstance = new iScroll('wrapper');
 
             $('#scroller').stellar({
