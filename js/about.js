@@ -14,8 +14,6 @@
             else {
                 $("#navbar").removeClass("small");
             }
-        }).resize(function() {
-            $(".about_panel").height($(this).height());
         });
 
         $(".about_panel").height($(window).height());
