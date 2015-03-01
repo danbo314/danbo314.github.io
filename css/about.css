@@ -113,7 +113,7 @@
     }
 
     #newYork > .about_content {
-        bottom: 30px
+        bottom: -20px
     }
 
 }
@@ -121,21 +121,21 @@
 @media all and (max-width: 550px) {
 
     #boston > .about_content {
-        top: 50px;
+        top: 100px;
     }
 
     #notreDame > .about_content {
-        top: 5px;
+        top: 100px;
     }
 
     #boston > .about_content,
     #notreDame > .about_content,
     #newYork > .about_content {
-        width: 300px;
+        width: 340px;
     }
 
-    #notreDame .big-bold {
-        width: 240px;
+    .about_content .big-bold {
+        font-size: 20px;
     }
 
     .small-thin {
