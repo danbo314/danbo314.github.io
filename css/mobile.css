@@ -1,0 +1,45 @@
+#hamburger {
+    color: #3b3b3b;
+}
+
+.mobileCover.thirds > img {
+    width: 32%;
+}
+
+.mobileCover.halves > img {
+    width: 49%;
+}
+
+.mobileCover {
+    padding-top: 40px;
+    position: relative;
+}
+
+@media all and (max-width: 675px) {
+
+    html, body {
+        height: 100%;
+    }
+
+    .web_project {
+        height: 100%;
+    }
+
+    #navbar.top > #menuContainer > #web {
+        display: block;
+    }
+
+    #navbar.top > #menuContainer > #mobile {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+
+    #footer.bottom {
+        position: fixed;
+        bottom: 0;
+    }
+
+}

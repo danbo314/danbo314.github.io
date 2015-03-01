@@ -192,7 +192,7 @@ a, a:visited {
 }
 
 #hamburger {
-    position: absolute;
+    position: fixed;
     color: #e8e8e8;
     font-size: 40px;
     top: 20px;
@@ -201,7 +201,7 @@ a, a:visited {
     width: 20px;
     display: none;
     cursor: pointer;
-    z-index: 6;
+    z-index: 999999999;
 }
 
 #menuContainer {
@@ -291,7 +291,7 @@ a, a:visited {
     font-family: 'Source Sans Pro', sans-serif;
     color: #e8e8e8;
     padding: 0px 20px 10px 15px;
-    z-index: 99999999;
+    z-index: 2;
 }
 
 #footer > #title {
@@ -382,7 +382,7 @@ a, a:visited {
     #navbar,
     #navbar.top {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
