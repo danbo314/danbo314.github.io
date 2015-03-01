@@ -7,4 +7,19 @@ $(function () {
             $("#navbar").removeClass("small");
         }
     });
+
+    $("#hamburger").click(function () {
+        $("#navbar").show().click(function() {
+            $(this).hide();
+        });
+    });
+
+    $(window).resize(function() {
+        if($(this).width() >= 675) {
+            $("#navbar").show();
+        }
+        else {
+            $("#navbar").hide();
+        }
+    });
 });

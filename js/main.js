@@ -13,7 +13,7 @@ $(function() {
             $("#navbar").show();
         }
         else {
-            $("#navbar").hide()
+            $("#navbar").hide();
         }
     });
 

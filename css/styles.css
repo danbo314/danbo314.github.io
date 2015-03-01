@@ -379,7 +379,8 @@ a, a:visited {
 
 @media all and (max-width: 675px) {
 
-    #navbar {
+    #navbar,
+    #navbar.top {
         display: none;
         position: absolute;
         top: 0;
@@ -390,7 +391,8 @@ a, a:visited {
         background: rgba(255, 80, 80, .9);
     }
 
-    #navbar > #menuContainer {
+    #navbar > #menuContainer,
+    #navbar.top > #menuContainer{
         width:150px;
         height:200px;
         position:absolute;
@@ -399,23 +401,34 @@ a, a:visited {
         margin:-140px 0 0 -75px;
     }
 
-    #navbar > #menuContainer > a {
+    #navbar > #menuContainer > a,
+    #navbar.top > #menuContainer > a{
         color: #e8e8e8;
         float: left;
         clear: left;
         margin-bottom: 10px;
     }
 
-    #navbar > #menuContainer > #resume {
-        display: none;
+    #navbar > #menuContainer > #name,
+    #navbar.top > #menuContainer > #name {
+        position: fixed;
+        top:15px;
+        left: -35px;
     }
 
-    #navbar .nav > h2 {
+    #navbar #title:hover,
+    #navbar.top #title:hover {
+        color: #e8e8e8;
+    }
+
+    #navbar .nav > h2,
+    #navbar.top .nav > h2{
         font-size: 50px;
         text-align: center;
     }
 
-    #navbar .navBottom {
+    #navbar .navBottom,
+    #navbar.top .navBottom {
         display: none;
     }
 
@@ -439,6 +452,11 @@ a, a:visited {
 }
 
 @media all and (max-width: 550px) {
+
+    #footer.bottom {
+        padding-top: 10px;
+        height: auto;
+    }
 
     #footer > #title,
     #footer > #icons {
