@@ -466,12 +466,17 @@ a, a:visited {
         float: none;
     }
 
-    #footer > #icons {
+    #footer > #icons,
+    #footer.bottom > #icons {
         width: 190px;
     }
 
     #footer > #title {
         width: 288px;
+    }
+
+    #footer.bottom > #title {
+        width: 269px;
     }
 
 }
