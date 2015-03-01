@@ -8,6 +8,15 @@ $(function() {
         });
     });
 
+    $(window).resize(function() {
+        if($(this).width() >= 675) {
+            $("#navbar").show();
+        }
+        else {
+            $("#navbar").hide()
+        }
+    });
+
 });
 
 function setFade(fadeIn, it) {
