@@ -2,6 +2,12 @@ $(function() {
     
     setFade(false,0);
 
+    $("#hamburger").click(function () {
+        $("#navbar").show().click(function() {
+            $(this).hide();
+        });
+    });
+
 });
 
 function setFade(fadeIn, it) {

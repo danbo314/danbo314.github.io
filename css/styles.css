@@ -87,6 +87,7 @@ a, a:visited {
     color: #e8e8e8;
     width: 500px;
     font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
 }
 
 .small-thin {
@@ -188,6 +189,19 @@ a, a:visited {
     -o-transition: all .1s ease .05s;
     -ms-transition: all .1s ease .05s;
     transition: all .1s ease .05s;
+}
+
+#hamburger {
+    position: absolute;
+    color: #e8e8e8;
+    font-size: 40px;
+    top: 20px;
+    right: 40px;
+    height: 20px;
+    width: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 6;
 }
 
 #menuContainer {
@@ -363,54 +377,83 @@ a, a:visited {
     opacity: 1;
 }
 
-/*@media all and (max-width: 675px) {
-    .bg {
+@media all and (max-width: 675px) {
+
+    #navbar {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background: rgba(255, 80, 80, .9);
+    }
+
+    #navbar > #menuContainer {
+        width:150px;
+        height:200px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin:-140px 0 0 -75px;
+    }
+
+    #navbar > #menuContainer > a {
+        color: #e8e8e8;
+        float: left;
+        clear: left;
+        margin-bottom: 10px;
+    }
+
+    #navbar > #menuContainer > #resume {
         display: none;
     }
 
-    body {
-        background: #e8e8e8;
+    #navbar .nav > h2 {
+        font-size: 50px;
+        text-align: center;
     }
 
-    #navbar #title {
-        position: absolute;
-        top: 0;
-        height: 50px;
-        line-height: 50px;
-        margin: 10px;
+    #navbar .navBottom {
+        display: none;
     }
 
-    #navbar {
-        bottom: auto;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: none;
-    }
-
-    #navbar #menuContainer {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-    #navbar .nav {
+    #hamburger {
         display: block;
-        width: 100%;
-        height: 25%;
-        line-height: 200px;
-        font-size: 60px;
     }
 
-    #navbar .nav:not(#title):not(#web) {
-        border-top: 1px solid #c1c1c1;
+    .mid-normal {
+        font-size: 20px;
+        line-height: 30px;
     }
 
-    #navbar .nav:not(#title):not(#contact) {
-        border-bottom: 1px solid grey;
+    #welcome {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 350px;
     }
 
-    #navbar .nav:hover .navBottom {
-        opacity: 0;
+}
+
+@media all and (max-width: 550px) {
+
+    #footer > #title,
+    #footer > #icons {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        float: none;
     }
-}*/
+
+    #footer > #icons {
+        width: 190px;
+    }
+
+    #footer > #title {
+        width: 288px;
+    }
+
+}
