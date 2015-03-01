@@ -14,9 +14,26 @@
             else {
                 $("#navbar").removeClass("small");
             }
+        }).resize(function() {
+            $(".about_panel").height($(this).height());
         });
 
         $(".about_panel").height($(window).height());
+
+        $("#hamburger").click(function () {
+            $("#navbar").show().click(function() {
+                $(this).hide();
+            });
+        });
+
+        $(window).resize(function() {
+            if($(this).width() >= 675) {
+                $("#navbar").show();
+            }
+            else {
+                $("#navbar").hide();
+            }
+        });
 
         var iScrollInstance;
 
@@ -28,7 +45,6 @@
             $('#scroller').stellar({
                 scrollProperty: 'transform',
                 positionProperty: 'transform',
-                parallaxBackgrounds: false,
                 horizontalScrolling: false
             });
         }

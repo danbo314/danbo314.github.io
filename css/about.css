@@ -13,7 +13,6 @@
 .about_panel {
     width: 100%;
     position: relative;
-    background-attachment: fixed;
 }
 
 .about_content {
@@ -45,7 +44,6 @@
 }
 
 #boston > .about_content {
-    top: 300px;
     width: 600px;
 }
 
@@ -55,7 +53,6 @@
 }
 
 #notreDame  > .about_content {
-    top: 100px;
     width: 700px;
 }
 
@@ -65,7 +62,6 @@
 }
 
 #newYork > .about_content {
-    bottom: 10px;
     right: auto;
     left: 50px;
     width: 600px;
@@ -76,4 +72,56 @@
     float: left;
     clear: left;
     text-align: left;
+}
+
+#cover.lighter {
+    display: none;
+}
+
+@media all and (max-width: 675px) {
+
+    #cover.lighter {
+        display: block;
+    }
+
+    #navbar.top > #menuContainer > #about {
+        display: none;
+    }
+
+    .about_content .big-bold {
+        font-size: 30px;
+    }
+
+    #boston > .about_content,
+    #notreDame > .about_content,
+    #newYork > .about_content {
+        width: 500px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+
+    #boston > .about_content {
+        top: -150px;
+    }
+
+    #boston > .about_content,
+    #notreDame > .about_content,
+    #newYork > .about_content {
+        width: 300px;
+    }
+
+    #notreDame .big-bold {
+        width: 240px;
+    }
+
+    .small-thin {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
 }
