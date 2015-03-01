@@ -120,8 +120,12 @@
 
 @media all and (max-width: 550px) {
 
-    #notreDame > .about_content {
+    #boston > .about_content {
         top: 50px;
+    }
+
+    #notreDame > .about_content {
+        top: 5px;
     }
 
     #boston > .about_content,
