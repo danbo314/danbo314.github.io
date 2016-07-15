@@ -49,6 +49,11 @@ a, a:visited {
     background-size: cover;
 }
 
+#image4 {
+    background: url("../img/me4.jpg") no-repeat center top;
+    background-size: cover;
+}
+
 #cover {
     text-align: right;
     color: #5a5a5a;

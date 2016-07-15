@@ -20,9 +20,9 @@ $(function() {
 });
 
 function setFade(fadeIn, it) {
-    var queue = [$("#image3"), $("#image2"), $("#image")],
+    var queue = [$("#image4"), $("#image3"), $("#image2"), $("#image")],
         $node = queue[it],
-        nextFadeIn = (it+1 === queue.length-1);
+        nextFadeIn = (fadeIn && it-1 >=0) || (it+1 === queue.length-1);
 
     setTimeout(function() {
         if (!fadeIn) {
@@ -40,7 +40,7 @@ function setFade(fadeIn, it) {
         }
         else {
             it = nextFadeIn ? it-1 : it+1;
-            it = it%3;
+            it = it%4;
         }
 
         setFade(nextFadeIn, it);
